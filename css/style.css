@@ -1,4 +1,5 @@
-overall settings*/
+/*overall settings*/
+
 body{margin: 0;
 padding: 0;}
 body{min-width: 1200px;}
@@ -28,8 +29,10 @@ input{margin: 0; padding: 0;}
 /*header*/
 .top{
 	background-color: #1d1007;
+	-webkit-background-size: 100%;
+	background-size: 100%;
 	height: 66px;
-	overflow: hidden;
+	padding-top: 25px;
 }
 .search-window{
 	padding-top: 25px;
@@ -176,8 +179,27 @@ background-repeat: no-repeat;
 	background-image: url(../img/bgr/galleryBGsmall.png);
 	height: 283px;
 	border-bottom: 4px solid #27160a;
+	overflow: hidden;
 }
-
+/*gallery*/
+.column-gallery-left{
+	width: 236px;
+	
+}
+.column-gallery-right{
+	width: 980px;
+	overflow: hidden;
+	
+}
+.column-gallery_item1{
+	float: left;
+}
+.column-gallery_item2{
+	float: center;
+}
+.column-gallery_item3{
+	float: right;
+}
 /*news and feedback*/
 .feedback-news{
 	background-image: url(../img/bgr/textilBGsmall.png);
@@ -206,6 +228,29 @@ background-repeat: no-repeat;
 .contacts{color: #fff;}
 
 .bottom-item{margin-top: 50px;}
+
+/*news*/
+.column-left{
+	width: 516px;
+	color: #fff;
+	font-style: none;
+	font-weight: normal;
+	
+}
+
+
+/*feedback*/
+
+.column-right{
+	width: 516px;
+	color: #fff;
+}
+
+.feedback{
+	padding-left: 35px;
+	border-left: 2px solid #fff;
+}
+
 
 
 
