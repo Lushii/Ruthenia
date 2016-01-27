@@ -273,32 +273,4 @@ background-repeat: no-repeat;
 
 
 
- /*Задайте колонкам ширину и float: left 
-.item{
-	float: left; width: 31%
-}
-
- Задайте бордер и посмотрите, как ведут себя колонки 
-.wrapper{
-border: 2px solid #000; overflow: hidden;	
-}
-
-
-
- Дальше css-код не трогаем ---- 
-body{
-  background-image: url('http://api.epixx.ru/img/html5/bg.svg');
-  font-size: 0px;
-}
-.wrapper{
-  margin: 20px;
-  padding: 20px;
-  border-color: rgb(68, 68, 68);
-}
-.item{
-  margin: 1%;
-  padding: 10px;
-  font-size: 12px;
-  background: #B6D7A8;
-  box-sizing: border-box;
-}
+ 
