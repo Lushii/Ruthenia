@@ -85,7 +85,7 @@ margin-right: 50px;
 	margin-top: 200px;
 	margin-left: 100px;
 	color: #594232;
-font-family: MuseoSans Curl 500;
+font-family: MuseoSansCurl 500;
 position: relative;
 
 
@@ -185,10 +185,10 @@ right: 88px;
   /* border: 4px solid #2AA198;*/
 } 
 .column-first{
-padding: 10px;
+padding:;
   box-sizing: border-box;
   
-  margin: 0% 1%;
+  margin: ;
 width: 33.33%; 
 float: left;
 margin: 0 auto;
@@ -200,10 +200,10 @@ min-height: 222px;
 }
 
 .column-second{
-padding: 10px;
+padding:;
   box-sizing: border-box;
   
-  margin: 0% 1%;
+  margin: ;
 width: 33.33%; 
 float: left;
 margin: 0 auto;
@@ -218,10 +218,10 @@ min-height: 222px;
 }
 
 .column-third{ 
-padding: 10px;
+padding:;
   box-sizing: border-box;
   
-  margin: 0% 1%;
+  margin: ;
 width: 33.33%; 
 float: left;
 margin: 0 auto;
@@ -231,27 +231,25 @@ min-height: 222px;
 	background: rgba(255,229,174,0.5)
 }
 
- 
+ /*titles nav*/
+
 a.column-titles{
 	text-transform: uppercase;
 	font-size: 22px;
     color: #ffe5ae;
     display: block;
     height: 100%;
-    margin-top: 100px;
+    margin-top: 20px;
     position: relative;
-    
+    font-family: MuseoSansCurl 300;
+    font-weight: normal;
  }
- .img-about:before{
- content:"";
-width: 22px;
-height: 38px;
-position: absolute;
-top: 50px;
-right: 35px;
-background-image: url(../img/icon/note-aboutus.svg);
-background-repeat: no-repeat;	
+ /*pictures nav*/
+ .nav-item__pic{
+ 	margin-top: 33px;
+ 	margin-left: 155px;
  }
+ 
 
 /*price*/
 .price{
@@ -259,6 +257,10 @@ background-repeat: no-repeat;
 	height: 67px;
 	border-top: 4px solid #27160a;
 	border-bottom: 4px solid #27160a;
+	text-transform: uppercase;
+	font-family: MuseoSansCurl 500;
+	font-size: 20px;
+	font-weight: normal;
 }
 
 /*gallery*/
@@ -274,6 +276,29 @@ background-repeat: no-repeat;
 .gallery{
 	overflow: hidden;
 	height: 282px;
+	display: inline-block;
+}
+.gallery-title-img{
+padding-right: ;
+padding-left: ;	
+position: relative;
+
+}
+.gallery-title{
+font-family: MuseoSansCurl 300;
+	font-size: 20px;
+	font-weight: normal;
+	padding-right: ;
+	padding-left: ;
+	text-transform: uppercase;
+	position: relative;
+			
+}
+.gallery-subtitle{
+padding-right: ;
+padding-left: ;
+position: relative;
+
 }
 
 /*внутри dib элементики с posr*/
@@ -282,23 +307,31 @@ background-repeat: no-repeat;
 .gallery-item:hover > .gallery-item__info{display: block}*/
 
 .gallery-item{
-	display: inline-block;
-	
+	position: relative;
+	margin-right: 0;
+	padding-right: 0;
+
 }
 .gallery-item__pic{
 	position: relative;
-	z-index: 1;
 	
 }
 .gallery-item__info{
 	position: absolute;
 	 width: 100%;
 	 height: 100%;
-	 display: none;}
+	 display: none;
+position: relative;
 
-/*.gallery-item:hover{}
+	}
+
+
+.gallery-item__pic:hover {
+background-color: rgba(255,225,225,0.5);	
+}
+
 .gallery-item__info{display: block}
-*/
+
 
 .gallery-item__pic:nth-child(3){
 background-color: rgba(255,229,174,0.5);
