@@ -276,8 +276,17 @@ a.column-titles{
 .gallery{
 	overflow: hidden;
 	height: 282px;
-	display: inline-block;
+	
 }
+
+.gallery-item{
+	position: relative;
+	margin-right: 0;
+	padding-right: 0;
+	display: inline-block;
+
+}
+/*иконка фотогалереи*/
 .gallery-title-img{
 padding-right: ;
 padding-left: ;	
@@ -295,34 +304,53 @@ font-family: MuseoSansCurl 300;
 			
 }
 .gallery-subtitle{
-padding-right: ;
-padding-left: ;
-position: relative;
+position: absolute;
 
 }
+/*картинки фотогалереи*/
+.gallery-item__pic{
+position: absolute;
+		
+}
+.gallery-item__pic1{
+	left: 105px;
+	top: -87px;
+}
+.gallery-item__pic2{
+	left: 385px;
+	top: -87px;
+}
+.gallery-item__pic3{
+	left: 666px;
+	top: -87px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*внутри dib элементики с posr*/
 /*.gallery-item>img.gallery-item__pic+.gallery-item__info
 .gallery-item__info{posa w100% h100% dn}
 .gallery-item:hover > .gallery-item__info{display: block}*/
 
-.gallery-item{
-	position: relative;
-	margin-right: 0;
-	padding-right: 0;
 
-}
-.gallery-item__pic{
-	position: relative;
-	
-}
+
 .gallery-item__info{
 	position: absolute;
 	 width: 100%;
 	 height: 100%;
 	 display: none;
 position: relative;
-
+right: 150px;
+  left: 50px;
 	}
 
 
