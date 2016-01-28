@@ -78,33 +78,96 @@ margin-right: 50px;
 .promo-column{
 	width: 50%;
 }
-.promo-name{
+.promo-title{
 	font-style: italic;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: normal;
 	margin-top: 200px;
 	margin-left: 100px;
+	color: #594232;
+font-family: MuseoSans Curl 500;
+position: relative;
+
 
 }
-.promo-title{
+.promo-title:before{
+content:"";
+  display: inline-block;
+  position: absolute;
+  bottom: 7px;
+  right: 240px;
+background-color: #594232;
+  width: 8px;
+  height: 8px;
+  border-radius: 50% 50%;
+}
+.promo-title:after{
+content:"";
+  display: inline-block;
+  position: absolute;
+  bottom: 7px;
+  left: 240px;
+background-color: #594232;
+  width: 8px;
+  height: 8px;
+  border-radius: 50% 50%;	
+}
+
+.promo-btn a{
 	text-transform: uppercase;
 	font-family: AmazingGrotesk TemiBold;
 	font-size: 44px;
 	font-weight: bold;
 	color: #fff;
 	padding: 30px 100px;
-	border: 1px solid #;
 	background-image: url(../img/bgr/bgwood-1.png);
 	background-repeat: no-repeat;
+	color: #8e7f74;
+	/*добавить внутренняя тень*/
 	
 }
-.promo-slogan{
+.promo-column{
+	position: relative;
+	
+}
+/*белые круги */
+
+/*.corner{
+width: 40px;
+height: 40px;
+background-image: url(../img/icon/WitheRound.png);
+background-repeat: no-repeat;
+padding-top: 10px;
+text-align: center;
+color: #fff;	
+}
+.l-top-corner{
+top: 40px;
+left: 30px;
+}
+.r-top-corner{
+top: 60px;
+left: 88px;
+}
+.l-bottom-corner{
+top: 50px;
+left: 48%;
+}
+.r-bottom-corner{
+top: 60px;
+right: 88px;	
+}*/
+
+
+.promo-subtitle{
 	font-style: italic;
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 20px;
 	color: #594232;
 	margin-left: 100px;
+	margin-top: 20px;
 }
+
 
 .promo-name,.promo-title, .promo-slogan{display: inline-block;
 }
@@ -112,6 +175,7 @@ margin-right: 50px;
 .main-nav{
 	background-image: url(../img/bgr/bgwood-1.png);
 	min-height: 648px;
+	background-position: 50% 50%;
 }
 
 .row{ 
@@ -119,21 +183,38 @@ margin-right: 50px;
   margin: 0 auto;
   /* border: 4px solid #2AA198;*/
 } 
-
-
-
-/*.column-third:nth-child(even) {
-	opacity: 0.5;
+.column-first{
+padding: 10px;
+  box-sizing: border-box;
+  
+  margin: 0% 1%;
+width: 33.33%; 
+float: left;
+margin: 0 auto;
+min-height: 222px;
 }
-.column-third:nth-child(odd) {
-	opacity: 0;
+
+.column-first:nth-child(2){
+	background: rgba(255,229,174,0.5)
 }
-.column-third:nth-child(even):hover {
-	opacity: 0;
+
+.column-second{
+padding: 10px;
+  box-sizing: border-box;
+  
+  margin: 0% 1%;
+width: 33.33%; 
+float: left;
+margin: 0 auto;
+min-height: 222px;	
 }
-.column-third:nth-child(odd):hover {
-	opacity: 0.5;
-}*/
+
+.column-second:nth-child(1){
+	background: rgba(255,229,174,0.5)
+}
+.column-second:nth-child(3){
+	background: rgba(255,229,174,0.5)
+}
 
 .column-third{ 
 padding: 10px;
@@ -145,6 +226,10 @@ float: left;
 margin: 0 auto;
 min-height: 222px;
 } 
+.column-third:nth-child(2){
+	background: rgba(255,229,174,0.5)
+}
+
  
 a.column-titles{
 	text-transform: uppercase;
@@ -181,6 +266,7 @@ background-repeat: no-repeat;
 	height: 283px;
 	border-bottom: 4px solid #27160a;
 	overflow: hidden;
+
 }
 /*gallery*/
 /*section.gallery c ofh и высотой*/
@@ -200,6 +286,7 @@ background-repeat: no-repeat;
 }
 .gallery-item__pic{
 	position: relative;
+	z-index: 1;
 	
 }
 .gallery-item__info{
@@ -212,7 +299,11 @@ background-repeat: no-repeat;
 .gallery-item__info{display: block}
 */
 
-
+.gallery-item__pic:nth-child(3){
+background-color: rgba(255,229,174,0.5);
+position: absolute;
+z-index: 2;	
+}
 
 
 /*news and feedback*/
@@ -220,6 +311,29 @@ background-repeat: no-repeat;
 	background-image: url(../img/bgr/textilBGsmall.png);
 	height: 607px;
 }
+
+/*news*/
+.column-left{
+	width: 516px;
+	color: #fff;
+	font-style: none;
+	font-weight: normal;
+	
+}
+
+/*feedback*/
+
+.column-right{
+	width: 516px;
+	color: #fff;
+}
+
+.feedback{
+	padding-left: 35px;
+	border-left: 2px solid #fff;
+}
+
+
 /*location*/
 
 .location{
@@ -245,27 +359,7 @@ background-repeat: no-repeat;
 
 .bottom-item{margin-top: 50px;}
 
-/*news*/
-.column-left{
-	width: 516px;
-	color: #fff;
-	font-style: none;
-	font-weight: normal;
-	
-}
 
-
-/*feedback*/
-
-.column-right{
-	width: 516px;
-	color: #fff;
-}
-
-.feedback{
-	padding-left: 35px;
-	border-left: 2px solid #fff;
-}
 
 
 
@@ -289,32 +383,4 @@ background-repeat: no-repeat;
 
 
 
- /*Задайте колонкам ширину и float: left 
-.item{
-	float: left; width: 31%
-}
-
- Задайте бордер и посмотрите, как ведут себя колонки 
-.wrapper{
-border: 2px solid #000; overflow: hidden;	
-}
-
-
-
- Дальше css-код не трогаем ---- 
-body{
-  background-image: url('http://api.epixx.ru/img/html5/bg.svg');
-  font-size: 0px;
-}
-.wrapper{
-  margin: 20px;
-  padding: 20px;
-  border-color: rgb(68, 68, 68);
-}
-.item{
-  margin: 1%;
-  padding: 10px;
-  font-size: 12px;
-  background: #B6D7A8;
-  box-sizing: border-box;
-}
+ 
