@@ -292,23 +292,31 @@ a.column-titles{
 
 }
 /*иконка фотогалереи*/
+
+/*dib и posr в этих эл-тах обязательны */
 .gallery-title-img{
-	display: none;
-	padding-top: 25px;
-	margin-left: 40px;
+position: absolute;
+display: inline-block;
+margin-top: 66px;
+margin-left: 100px;
 }
 .gallery-title{
-	display: none;
+	position: absolute;
+	display: inline-block;
 	font-family: MuseoSansCurl 300;
 	font-size: 20px;
 	font-weight: normal;
 	padding-right: ;
 	padding-left: ;
 	text-transform: uppercase;
-	
+	margin-top: 130px;
+	margin-left: 32px;
 }
 .gallery-subtitle{
-display: none;
+position: absolute;
+display: inline-block;
+margin-top: 160px;
+margin-left: 50px;
 }
 
 /*картинки фотогалереи*/
@@ -317,16 +325,16 @@ position: absolute;
 		
 }
 .gallery-item__pic1{
-	left: 105px;
-	top: -87px;
+	left: 260px;
+	top: -15px;
 }
 .gallery-item__pic2{
-	left: 385px;
-	top: -87px;
+	left: 539px;
+	top: -15px;
 }
 .gallery-item__pic3{
-	left: 666px;
-	top: -87px;
+	left: 820px;
+	top: -15px;
 }
 .gallery-item__info{
 	position: absolute;
@@ -341,12 +349,10 @@ right: 150px;
 background: rgba(255,229,174,0.5)
 }
 
-
-
-/*.gallery-item__pic:hover {
+.gallery-item__pic:hover {
 background-color: rgba(255,225,225,0.5);	
 }
-*/
+
 
 /*news and feedback*/
 .feedback-news{
