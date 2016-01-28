@@ -123,6 +123,7 @@ background-color: #594232;
 	background-image: url(../img/bgr/bgwood-1.png);
 	background-repeat: no-repeat;
 	color: #8e7f74;
+	border-radius: 15px;
 	/*добавить внутренняя тень*/
 	
 }
