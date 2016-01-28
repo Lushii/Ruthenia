@@ -33,26 +33,15 @@ input{margin: 0; padding: 0;}
 	background-size: 100%;
 	height: 66px;
 	padding-top: 25px;
-}
-.search-window{
-	padding-top: 25px;
-	margin-bottom: 25%;
-	background-color: #1d1007;
-}
-.search-window_item{
-width: 378px;
-height: 25px;
-display: inline;
-margin-left: 200px;
-margin-bottom: 25px;
-margin-top: 0;
-padding-top: 0;
+	
 }
 
 
 .vk_like{
+	display: inline-block;
 	color: #f5abb6;
-	margin-left: 10px;
+	margin-left: 30px;
+	margin-bottom: 30px;
 }
 .fa{margin: 1%;
 color: #fff;
@@ -60,9 +49,92 @@ color: #fff;
 .number-top{color: #fff;
 margin-right: 50px;
 }
-.heart{margin-left: 96px;}
-.vk-icon{margin-left: 50px;}
+.heart{
+	margin-left: 6px;
+	margin-top: 15px;
+}
+.vk-icon{margin-left: -30px;}
 
+/*search-window*/
+.search-window{
+
+}
+
+.search-window{
+	padding-top: 5px;
+	margin-left: 350px;
+	margin-bottom: 25%;
+	background-color: #1d1007;
+}
+.search-window_item{
+width: 378px;
+height: 25px;
+display: inline;
+margin-left: 250px;
+margin-bottom: 25px;
+margin-top: 0;
+padding-top: 0;
+}
+
+#search {
+  /* устанавливаем ширину формы,
+  ** равную ширине поля ввода (183 + 37 + 15)	*/
+  width: 335px;
+  height: 29px;
+}
+
+/* делаем инпуты плавающими, чтобы убрать лишние отступы,
+** и отключаем бордюры */
+#search input {
+  float: left;
+  border: none;
+}
+
+/* стили для поля ввода */
+#search .input {
+  width: 183px;
+  height: 28px;
+
+  /* внутренний отступ справа (37px) делаем больше левого,
+  ** т.к. там будет размещена кнопка отправки	*/
+  padding: 0 37px 1px 15px;
+  background: #EEE url(https://lh4.googleusercontent.com/-EllJnywnmlY/UAaKJYSYYMI/AAAAAAAABUU/IaRo-yUcRmc/s235/search.png) no-repeat;
+  color: #555;
+  font: 13px/28px Tahoma, Arial, sans-serif;
+  outline: none;
+}
+
+/* приходится использовать хак для FireFox
+** для вертикального выравнивания текста,
+** т.к. у него свои особые представления об этом */
+@-moz-document url-prefix() {
+  #search .input {
+    height: 27px;
+    padding-bottom: 2px;
+  }
+}
+
+/* меняем оформление поля ввода при фокусе */
+#search .input:focus {
+  background-color: #E8E8E8;
+  background-position: 0 -29px;
+  color: #333;
+}
+
+/* оформляем кнопку отправки */
+#search .submit {
+  width: 37px;
+  height: 29px;
+  cursor: pointer;
+
+  /* смещаем кнопку влево на собственную ширину,
+  ** чтобы она оказалась над полем ввода */
+  margin-left: -37px;
+
+  /* по-нормальному, здесь достаточно было бы указать background: none;
+  ** но приходится указывать фон из-за бага в IE */
+  background: url(dontexist.png);
+}
 
 
 /*main*/
@@ -446,22 +518,71 @@ margin-top: 25px;
 	border-top: 4px solid #27160a;
 	border-bottom: 4px solid #27160a;
 }
+.location-title{
+	color: #30190c;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
 /*map*/
 
 .map{
 	height: 563px;
 }
 /*footer*/
-.bottom{
+.contacts-bottom{
 	background-color: #1d1007;
 	height: 200px;
 	overflow: hidden;
 }
-.adress{color: #fff;}
-.copyright{color: #fff;}
-.contacts{color: #fff;}
+.contacts-bottom-item{
+	
+	
+}
+.contacts-bottom-item-left{
+	display: inline-block;
+	
+	border-left: 2px solid #ffe5ae;
+	margin-top: 60px;
+	padding-top: 5px;
+	padding-bottom: 35px;
+	padding-left: 15px;
+}
+.adress-upp{
+color: #ffe5ae;
+text-transform: uppercase;
+font-size: 14px;
+}
+.adress{color: #ffe5ae;
+	font-size: 12px;
+}
+.contacts-bottom-item-center{}
+.copyright{
+	display: inline-block;
+	color: #ffe5ae;
+font-size: 15px;
+margin-left: 240px;
+margin-top: 60px;
+}
 
-.bottom-item{margin-top: 50px;}
+.contacts-bottom-item-right{
+display: inline-block;
+	border-right: 2px solid #ffe5ae;
+	
+	padding-top: 5px;
+	padding-bottom: 35px;
+	padding-right: 15px;
+	margin-left: 800px;	
+}
+.contacts-title-bot{
+	color: #ffe5ae;
+text-transform: uppercase;
+font-size: 14px;
+}
+.contacts-other-bot{
+	font-size: 10px;
+}
+
 
 
 

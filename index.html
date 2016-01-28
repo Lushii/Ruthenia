@@ -16,8 +16,9 @@
     	  <!-- vk --><!-- likes -->
     	    <div class="row search-window">
     	      <div class="column-top left">
-    	        <a href="" ><img src="img/content/vkontakte.png" alt="вконтакте" class="vk-icon"></a>
-    	        <a href="" ><img src="img/content/heart.png" alt="heart" class="heart left"></a>
+    	        <img src="img/content/vkontakte.png" alt="вконтакте" class="vk-icon">
+    	        <img src="img/content/heart.png" alt="heart" class="heart left">
+                <p class="vk_like">50 likes</p>
     	      </div>
     	  <!-- header number -->
     	        <!-- Put this div tag to the place, where the Like block will be -->
@@ -25,13 +26,18 @@
                 <script type="text/javascript">
                 VK.init({apiId: API_ID, onlyWidgets: true});
                 </script>
-                <div id="vk_like">likes</div>
+                <div id="vk_like"></div>
                 <script type="text/javascript">
                 VK.Widgets.Like("vk_like", {type: "button"});
                 </script>
     	        <span class="right number-top">+7(904) 510 - 38 - 88</span>
     	      
     	  <!-- search-window ikon from font-awesome -->
+                <form action="" method="post" id="search" class="search-window center">
+                <input type="text" name="" value="поиск" onblur="if(this.value=='') this.value='поиск';" onfocus="if(this.value=='поиск') this.value='';" class="input" />
+                <input type="submit" name="" value="" class="submit" />
+                </form>
+
     	    </div>
     	  </div>
     	</header>
@@ -214,12 +220,15 @@
     			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15951.210588911172!2d30.701125436283082!3d60.01671061490567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4697d30df5927ca1%3A0xee88e82c7a6ad151!2z0J_Rg9GI0LrQuNC90YHQutC40Lkg0L_QtdGALiwg0JLRgdC10LLQvtC70L7QttGB0LosINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4sIDE4ODY0Mg!5e0!3m2!1sru!2sru!4v1453929216892" width="100%" height="563" frameborder="0" style="border:0" allowfullscreen></iframe>
     		</div>
     		<!-- footer -->
-    		<footer class="bottom">
+    		<footer class="contacts-bottom">
     		  <div class="container">
-    		    <div class="row">
-    			  <div class="column left bottom-item"><span class="adress">Наш адрес</span></div>
-    			  <div class="column center bottom-item"><span class="copyright">(с)Все права защищены. 2015</span></div>
-    			  <div class="column right bottom-item">Контакты<span class="contacts"></span></div>
+    		    <div class="contacts-bottom-item">
+    			  <div class="contacts-bottom-item-left left">
+                  <span class="adress-upp">Наш адрес<br>Всеволожск,</span>
+                  <span class="adress">Мельничный ручей,<br>Пушкинский пер.,7</span>
+                  </div>
+    			  <div class="contacts-bottom-item-center"><span class="copyright">(с)Все права защищены. 2015</span></div>
+    			  <div class="contacts-bottom-item-right"><span class="contacts-title-bot">Контакты:</span><!-- <span class="contacts-other-bot">тел.:+7(904)-38-88<br>e-mail:info@millcreek.</span></div> -->
     			</div>
     		  </div>
     		</footer>
