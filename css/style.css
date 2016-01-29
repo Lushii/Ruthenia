@@ -4,6 +4,14 @@ body{margin: 0;
 padding: 0;}
 body{min-width: 1200px;}
 body{font-family: 'Roboto', sans-serif;}
+@font-face { 
+  font-family: 'Web font'; 
+  src: url('webfont.woff2') format('woff2'), 
+       url('webfont.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('webfont.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
 a{text-decoration: none;}
 /*floats*/
 .right{float: right;}
@@ -32,31 +40,74 @@ input{margin: 0; padding: 0;}
 	-webkit-background-size: 100%;
 	background-size: 100%;
 	height: 66px;
-	padding-top: 25px;
+}
+.top-items{display: inline-block;
+content:'';
+  
+}
+.top-item-vk-like{
+position: relative;
+background-image: url(../img/content/vkontakte.png);
+width: 12px;
+  height: 12px;
+  vertical-align:middle;
+  top: 22px;
+  left: 20px;
+  background-size:100%;
+  background-repeat: no-repeat;
+}
+.top-item-like-countdown{
+position: relative;
+background-image: url(../img/content/heart.png);
+width: 12px;
+  height: 12px;
+  vertical-align:middle;
+  top: 22px;
+  left: 40px;
+  background-size:100%;
+  background-repeat: no-repeat;
+}
+.top-item-50likes{
+position: relative;
+left: 60px;	
+top: -10px;
+color: #f5abb6;	
+}
+
+.top-item-search-winow{
+position: relative;
+left: 320px;
+	top: -50px;
+}
+.search-window{
+	position: relative;
 	
 }
-
-
-.vk_like{
-	display: inline-block;
-	color: #f5abb6;
-	margin-left: 30px;
-	margin-bottom: 30px;
+.search-window-input{
+	position: relative;
+	float: left;
+  border: none;
+  padding: 0 280px 1px 15px;
+  background: #311d0f url(../img/icon/Search-glass.png) no-repeat;
+  vertical-align: middle;
+  color: #d8a95e;
+  
 }
-.fa{margin: 1%;
+
+
+
+.top-item__number{
+position: relative;
 color: #fff;
+font-size: 16px;
+font-weight: normal;
+left: 890px;
+top: -70px;
 }
-.number-top{color: #fff;
-margin-right: 50px;
-}
-.heart{
-	margin-left: 6px;
-	margin-top: 15px;
-}
-.vk-icon{margin-left: -30px;}
 
-/*search-window*/
+/*
 .search-window{
+	font-size: 15px;
 
 }
 
@@ -76,65 +127,66 @@ margin-top: 0;
 padding-top: 0;
 }
 
-#search {
+#search {*/
   /* устанавливаем ширину формы,
   ** равную ширине поля ввода (183 + 37 + 15)	*/
-  width: 335px;
+ /* width: 335px;
   height: 29px;
-}
+}*/
 
 /* делаем инпуты плавающими, чтобы убрать лишние отступы,
 ** и отключаем бордюры */
-#search input {
+/*#search input {
   float: left;
   border: none;
-}
+}*/
 
 /* стили для поля ввода */
-#search .input {
+/*#search .input {
   width: 183px;
-  height: 28px;
+  height: 28px;*/
 
   /* внутренний отступ справа (37px) делаем больше левого,
   ** т.к. там будет размещена кнопка отправки	*/
-  padding: 0 37px 1px 15px;
-  background: #EEE url(https://lh4.googleusercontent.com/-EllJnywnmlY/UAaKJYSYYMI/AAAAAAAABUU/IaRo-yUcRmc/s235/search.png) no-repeat;
-  color: #555;
+  /*padding: 0 280px 1px 15px;
+  background: #311d0f url(../img/icon/Search-glass.png) no-repeat;
+  color: #d8a95e;
   font: 13px/28px Tahoma, Arial, sans-serif;
   outline: none;
-}
+  border-radius: 15px;
+}*/
 
 /* приходится использовать хак для FireFox
 ** для вертикального выравнивания текста,
 ** т.к. у него свои особые представления об этом */
-@-moz-document url-prefix() {
+/*@-moz-document url-prefix() {
   #search .input {
     height: 27px;
     padding-bottom: 2px;
   }
-}
+}*/
 
 /* меняем оформление поля ввода при фокусе */
-#search .input:focus {
+/*#search .input:focus {
   background-color: #E8E8E8;
   background-position: 0 -29px;
   color: #333;
-}
+}*/
 
 /* оформляем кнопку отправки */
-#search .submit {
+/*#search .submit {
   width: 37px;
   height: 29px;
-  cursor: pointer;
+  cursor: pointer;*/
 
   /* смещаем кнопку влево на собственную ширину,
   ** чтобы она оказалась над полем ввода */
-  margin-left: -37px;
+  /*margin-left: -280px;*/
 
   /* по-нормальному, здесь достаточно было бы указать background: none;
   ** но приходится указывать фон из-за бага в IE */
-  background: url(dontexist.png);
-}
+  /*background: url(dontexist.png);
+}*/
 
 
 /*main*/
@@ -528,60 +580,73 @@ margin-top: 25px;
 
 .map{
 	height: 563px;
-}
-/*footer*/
-.contacts-bottom{
-	background-color: #1d1007;
-	height: 200px;
-	overflow: hidden;
-}
-.contacts-bottom-item{
 	
-	
-}
-.contacts-bottom-item-left{
-	display: inline-block;
-	
-	border-left: 2px solid #ffe5ae;
-	margin-top: 60px;
-	padding-top: 5px;
-	padding-bottom: 35px;
-	padding-left: 15px;
-}
-.adress-upp{
-color: #ffe5ae;
-text-transform: uppercase;
-font-size: 14px;
-}
-.adress{color: #ffe5ae;
-	font-size: 12px;
-}
-.contacts-bottom-item-center{}
-.copyright{
-	display: inline-block;
-	color: #ffe5ae;
-font-size: 15px;
-margin-left: 240px;
-margin-top: 60px;
 }
 
-.contacts-bottom-item-right{
-display: inline-block;
-	border-right: 2px solid #ffe5ae;
-	
+/*footer*/
+
+.footer-contacts{
+    height: 200px;
+	overflow: hidden;
+	background-color: #1d1007;
+}
+
+.footer-contacts-item1{
+	display: inline-block;
+	color: #ffe5ae;
+	border-left: 2px solid #ffe5ae;
+	margin-top: 40px;
 	padding-top: 5px;
 	padding-bottom: 35px;
-	padding-right: 15px;
-	margin-left: 800px;	
+	padding-left: 20px;
 }
-.contacts-title-bot{
-	color: #ffe5ae;
+.footer-adress-text1{
+	position: relative;
+	font-size: 15px;
 text-transform: uppercase;
-font-size: 14px;
+	
 }
-.contacts-other-bot{
-	font-size: 10px;
+.footer-adress-text2{
+	position: relative;
+	font-size: 12px;
+	text-transform: none;
 }
+
+.footer-contacts-item2{
+	display: inline-block;
+	
+}
+.copyright{
+	position: relative;
+	left: 240px;
+	color: #ffe5ae;
+	font-size: 12px;
+}
+
+.footer-contacts-item3{
+	display: inline-block;
+	border-right: 2px solid #ffe5ae;
+	color: #ffe5ae;
+	margin-top: 40px;
+	padding-top: 5px;
+	padding-bottom: 35px;
+	padding-right: 20px;
+margin-left: 570px;
+
+}
+.footer-number-text1{
+	position: relative;
+	text-align: right;
+	font-size: 15px;
+text-transform: uppercase;
+}
+.footer-number-text2{
+	position: relative;
+	text-align: right;
+	font-size: 12px;
+	text-transform: none;
+}
+
 
 
 

@@ -2,41 +2,38 @@
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Название проекта</title>
+		<title>Ruthenia</title>
 		<link rel='stylesheet' href='css/normalize.css' type='text/css'>
 		<link rel="stylesheet" href="css/style.css" type="text/css">
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,400italic,500,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <!-- Put this script tag to the <head> of your page -->
-        <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+        
 	</head>
 	<body>
 	<!-- header -->
     	<header class="top">
     	  <div class="container">
-    	  <!-- vk --><!-- likes -->
-    	    <div class="row search-window">
-    	      <div class="column-top left">
-    	        <img src="img/content/vkontakte.png" alt="вконтакте" class="vk-icon">
-    	        <img src="img/content/heart.png" alt="heart" class="heart left">
-                <p class="vk_like">50 likes</p>
-    	      </div>
-    	  <!-- header number -->
-    	        <!-- Put this div tag to the place, where the Like block will be -->
+    	    <div class="top-items">
+                
+                   <div class="top-item-vk-like"></div>
+                   <div class="top-item-like-countdown"></div>
+                   <p class="top-item-50likes">50 likes</p>
+                    <div class="top-item-search-winow">
+                      <form action="" method="post" id="" class="search-window">
+                        <input type="text" name="" value="" onblur="if(this.value=='') this.value='';" onfocus="if(this.value=='') this.value='';" class="search-window-input">
+                      </form>
 
-                <script type="text/javascript">
-                VK.init({apiId: API_ID, onlyWidgets: true});
-                </script>
-                <div id="vk_like"></div>
-                <script type="text/javascript">
-                VK.Widgets.Like("vk_like", {type: "button"});
-                </script>
-    	        <span class="right number-top">+7(904) 510 - 38 - 88</span>
-    	      
+                    </div>
+                
+                    <div class="top-item__number"><span>+7 (904) 510 - 38 - 88</span></div>
+            
+    	    
     	  <!-- search-window ikon from font-awesome -->
-                <form action="" method="post" id="search" class="search-window center">
-                <input type="text" name="" value="поиск" onblur="if(this.value=='') this.value='поиск';" onfocus="if(this.value=='поиск') this.value='';" class="input" />
+               <!--  <form action="" method="post" id="search" class="search-window center">
+                <input type="text" name="" value="Поиск..." onblur="if(this.value=='') this.value='поиск';" onfocus="if(this.value=='поиск') this.value='';" class="input" />
                 <input type="submit" name="" value="" class="submit" />
-                </form>
+                </form> -->
 
     	    </div>
     	  </div>
@@ -217,25 +214,59 @@
     		  </div>
     		</div>
     		<div class="map">
-    			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15951.210588911172!2d30.701125436283082!3d60.01671061490567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4697d30df5927ca1%3A0xee88e82c7a6ad151!2z0J_Rg9GI0LrQuNC90YHQutC40Lkg0L_QtdGALiwg0JLRgdC10LLQvtC70L7QttGB0LosINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4sIDE4ODY0Mg!5e0!3m2!1sru!2sru!4v1453929216892" width="100%" height="563" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15951.210588911172!2d30.701125436283082!3d60.01671061490567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4697d30df5927ca1%3A0xee88e82c7a6ad151!2z0J_Rg9GI0LrQuNC90YHQutC40Lkg0L_QtdGALiwg0JLRgdC10LLQvtC70L7QttGB0LosINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4sIDE4ODY0Mg!5e0!3m2!1sru!2sru!4v1453929216892" width="100%" height="563" frameborder="0" style="border:0" allowfullscreen></iframe>
     		</div>
     		<!-- footer -->
-    		<footer class="contacts-bottom">
-    		  <div class="container">
-    		    <div class="contacts-bottom-item">
-    			  <div class="contacts-bottom-item-left left">
-                  <span class="adress-upp">Наш адрес<br>Всеволожск,</span>
-                  <span class="adress">Мельничный ручей,<br>Пушкинский пер.,7</span>
-                  </div>
-    			  <div class="contacts-bottom-item-center"><span class="copyright">(с)Все права защищены. 2015</span></div>
-    			  <div class="contacts-bottom-item-right"><span class="contacts-title-bot">Контакты:</span><!-- <span class="contacts-other-bot">тел.:+7(904)-38-88<br>e-mail:info@millcreek.</span></div> -->
-    			</div>
-    		  </div>
-    		</footer>
-
+<footer class="footer-contacts">
+    <div class="container">
+      <div class="footer-contacts-item">
+        <div class="footer-contacts-item1">
+            <p class="footer-adress-text1">Наш адрес<br> Всеволожск,<span class="footer-adress-text2"> Мельничный ручей,<br> Пушкинский пер.,7</span></p>
+            </div>
+          <div class="footer-contacts-item2">
+            <p class="copyright">(с)Все права защищены. 2015</p>
+            </div>
+          <div class="footer-contacts-item3">
+            <p class="footer-number-text1">Контакты:<br>
+            <span class="footer-number-text2">тел.:+7(904)-38-88<br>e-mail:info@millcreek.</p>
+          </div>
+      </div>
+    </div>
+</footer>
     	</main>
 
-    	
+        <!-- like-countdown from VK -->
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+
+<script type="text/javascript">
+                VK.init({apiId: API_ID, onlyWidgets: true});
+                </script>
+                <div id="vk_like"></div>
+<script type="text/javascript">
+                VK.Widgets.Like("vk_like", {type: "button"});
+                </script>
+
+        <!-- page-skroll -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+ <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+  $(function() {
+$('a[href*=#]:not([href=#])').click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+var target = $(this.hash);
+target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+if (target.length) {
+$('html,body').animate({
+scrollTop: target.offset().top
+}, 1000);
+return false;
+}
+}
+});
+});
+</script>
+<script src="js/script.js"></script>   	
 
     	 
     	  
