@@ -2,7 +2,7 @@
 
 body{margin: 0;
 padding: 0;}
-body{min-width: 1200px;}
+body{min-width: 1400px;}
 body{font-family: 'Roboto', sans-serif;}
 @font-face { 
   font-family: 'Web font'; 
@@ -33,6 +33,8 @@ input{margin: 0; padding: 0;}
  .row{
  	overflow: hidden;
  }
+
+ html { overflow-x: hidden; }
 
 /*header*/
 .top{
