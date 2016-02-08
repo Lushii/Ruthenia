@@ -5,41 +5,31 @@
 		<title>Ruthenia</title>
 		<link rel='stylesheet' href='css/normalize.css' type='text/css'>
 		<link rel="stylesheet" href="css/style.css" type="text/css">
-    <!-- switch the lightbox -->
-    <link href="path/to/lightbox.css" rel="stylesheet">
-
-    <!-- Put this script tag to the <head> of your page -->
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,400italic,500,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        
-        
-	</head>
+  </head>
 	<body>
 	<!-- header -->
-    	<header class="top">
-    	  <div class="container">
-    	    <div class="top-items">
-                
-                   <div class="top-item-vk-like"></div>
-                   <div class="top-item-like-countdown"></div>
-                   <p class="top-item-50likes">50 likes</p>
-                    <div class="top-item-search-winow">
-                      <form action="" method="post" id="" class="search-window">
-                        <input type="text" name="" value="" onblur="if(this.value=='') this.value='';" onfocus="if(this.value=='') this.value='';" class="search-window-input">
-                      </form>
-
-                    </div>
-                
-                    <div class="top-item__number"><span>+7 (904) 510 - 38 - 88</span></div>
+   <header class="top">
+        <div class="container">
+            <div class="top-item top-item__likecounter"><span>likes</span></div>
+            <div class="top-item top-item__form">
+              <form action="" method="post" id="search">
+                <lable><i class="fa fa-search"></i></lable>
+                <input type="text" name="" value="поиск" onblur="if(this.value=='') this.value='поиск';" onfocus="if(this.value=='поиск') this.value='';" class="input" />
+                <input type="submit" name="" value="" class="submit" />
+              </form>
+            </div>  
+            <div class="top-item top-item__number"><span>+7 (904) 510 - 38 - 88</span>
             </div>
-    	  </div>
-    	</header>
+        </div> 
+      </header>     
     	<main>
     		<div class="promo">
+        <div class="promo_background-picture"></div>
     			<div class="container">
     			  <div class="promo-column">
     			    <h2 class="promo-title left">Крестьянская усадьба</h2>
-    			    <h1 class="promo-btn left"><a href="">Рутения</a></h1>
+              <div class="promo-btn--background"></div>
+    			    <h1 class="promo-btn"><a href="">Рутения</a></h1>
     		        <span class="promo-subtitle left">Приветствует Вас</span>
                     	
     			  </div>
@@ -49,48 +39,100 @@
     		  <div class="container">
     		    <div class="row">
     				<div class="column-first">
-                    <a href="" class=""><img src="img/icon/note-aboutus.png" height="81" width="83" alt="" class="nav-item__pic"></a>
-    				  <a href="" class="column-titles center img-about"><span class="column-text nav-pin2">О нас</span></a>
-                      
-    				</div>
-    				<div class="column-first">
-                    <a href="" class=""><img src="img/icon/chiken.png" height="88" width="75" alt="" class="nav-item__pic"></a>
-    				  <a href="" class="column-titles center img-chicks"><span class="column-text">Птичий<br>двор</span></a>
-    				</div>
-    				<div class="column-first">
-                    <a href="" class=""><img src="img/icon/paprika.png" height="74" width="54" alt="" class="nav-item__pic"></a>
-    				  <a href="" class="column-titles center img-paprika"><span class="column-text">Ресторан<br>"Паприка"</span></a>
-    				</div>
-    			</div>
-    			<div class="row">
-    				<div class="column-second">
-                    <a href="" class=""><img src="img/icon/roup-stairway.png" height="88" width="53" alt="" class="nav-item__pic"></a>
-    				  <a href="" class="column-titles center img-roup"><span class="column-text">Веревочная<br>деревня</span></a>
-    				</div>
-    				<div class="column-second">
-                    <a href="" class=""><img src="img/icon/horse.png" height="88" width="110" alt="" class="nav-item__pic"></a>
-    				  <a href="" class="column-titles center img-horse"><span class="column-text">Детская конная<br>академия</span></a>
-    				</div>
-    				<div class="column-second">
-                    <a href="" class=""><img src="img/icon/house.png" height="74" width="95" alt="" class="nav-item__pic"></a>
-    				  <a href="" class="column-titles center img-house"><span class="column-text">Фермерский<br>домик</span></a>
-    				</div>
-    			</div>
-    			<div class="row">
-    				<div class="column-third">
-                    <a href="" class=""><img src="img/icon/child.png" height="87" width="103" alt="" class="nav-item__pic"></a>
-    				  <a href="" class="column-titles center img-eco"><span class="column-text">Детское<br>эко-воспитание</span></a>
-    				</div>
-    				<div class="column-third">
-                    <a href="" class=""><img src="img/icon/books.png" height="87" width="58" alt="" class="nav-item__pic"></a>
-    				  <a href="" class="column-titles center img-books"><span class="column-text">Полезное<br>чтиво</span></a>
-    				</div>
-    				<div class="column-third">
-                    <a href="" class=""><img src="img/icon/mobile-phone.png" height="82" width="49" alt="" class="nav-item__pic-mobile"></a>
-    				  <a href="" class="column-titles center img-contacts"><span class="column-text">Контакты</span></a>
-    				</div>
-    			</div>
-    		  </div>
+
+<ul class="horse-menu">
+    <li class="horse-menu-item">
+      <a class="horse-menu-item__link" href="#">
+        <span class="horse-menu-item__icon horse-menu-item__icon_aboutus"></span>
+        <span class="horse-menu-item__title">о нас</span>
+      </a>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-right "></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-right"></span>
+    </li>
+    <li class="horse-menu-item horse-menu-item__layout">
+          <a class="horse-menu-item__link" href="#">
+        <span class="horse-menu-item__icon horse-menu-item__icon_birds"></span>
+        <span class="horse-menu-item__title">Птичий двор</span>
+      </a>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-right "></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-right"></span>
+    </li>
+    <li class="horse-menu-item">
+      <a class="horse-menu-item__link" href="#">
+        <span class="horse-menu-item__icon horse-menu-item__icon_paprika"></span>
+        <span class="horse-menu-item__title">Ресторан<br>"Паприка"</span>
+      </a>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-right "></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-right"></span>
+    </li>
+    <li class="horse-menu-item horse-menu-item__layout">
+      <a class="horse-menu-item__link" href="#">
+        <span class="horse-menu-item__icon horse-menu-item__icon_stairway"></span>
+        <span class="horse-menu-item__title">Веревочная<br>деревня</span>
+      </a>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-right "></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-right"></span>
+    </li>
+    <li class="horse-menu-item">
+      <a class="horse-menu-item__link" href="#">
+        <span class="horse-menu-item__icon horse-menu-item__icon_childeacademy"></span>
+        <span class="horse-menu-item__title">Детская конная<br>академия</span>
+      </a>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-right "></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-right"></span>
+    </li>
+    <li class="horse-menu-item horse-menu-item__layout">
+      <a class="horse-menu-item__link" href="#">
+        <span class="horse-menu-item__icon horse-menu-item__icon_farmhouse"></span>
+        <span class="horse-menu-item__title">Фермерский<br>домик</span>
+      </a>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-right "></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-right"></span>
+    </li>
+    <li class="horse-menu-item">
+      <a class="horse-menu-item__link" href="#">
+        <span class="horse-menu-item__icon horse-menu-item__icon_eco"></span>
+        <span class="horse-menu-item__title">Детское<br>эко-воспитание</span>
+      </a>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-right "></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-right"></span>
+    </li>
+    <li class="horse-menu-item horse-menu-item__layout">
+      <a class="horse-menu-item__link" href="#">
+        <span class="horse-menu-item__icon horse-menu-item__icon_usefulbooks"></span>
+        <span class="horse-menu-item__title">Полезное<br>чтиво</span>
+      </a>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-right "></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-right"></span>
+    </li>
+    <li class="horse-menu-item">
+      <a class="horse-menu-item__link" href="#">
+        <span class="horse-menu-item__icon horse-menu-item__icon_contacts"></span>
+        <span class="horse-menu-item__title">Контакты</span>
+      </a>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_top-right "></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-left"></span>
+      <span class="horse-menu-item__nail horse-menu-item__nail_bottom-right"></span>
+    </li>
+  </ul>
+      
     		</nav>
     		<!-- price section -->
     		<div class="price">
@@ -99,40 +141,26 @@
     		  </div>
     		</div>
     		<!-- photogallery -->
-    		<div class="gallery">
-    		    <div class="container">
-                <div class="gallery-cart">
-
-                    <img src="img/icon/Gallery-icon.png" height="44" width="44" alt="" class="gallery-title-img">
-                    <p class="gallery-title">Фотогалерея</p>
-                    <a href=""><span class="gallery-item__pic gallery-subtitle"><ins>посмотреть всё</ins></span></a>
-                    <div class="gallery-item__info"></div>
-
-                </div>
-
-    		  	<div class="gallery-item view view-first view-hover">
-            <a href="images/Slide1.png" data-lightbox="image-1" data-title="My caption">Image #1</a>
-
-                    <a href=""><img src="img/content/Slide1.png" alt="" class="gallery-item__pic gallery-item__pic1"></a>
-                    <div class="mask">
-                      <a href=""></a>
-                    </div>
-                </div>
-            <div class="gallery-item view view-first view-hover">
-                    <img src="img/content/Slide2.png" height="285" width="285" alt="" class="gallery-item__pic gallery-item__pic2">
-                     <div class="mask">
-                     <h2 class="oure-horses">Наши лошади</h2>
-                      <a href=""></a>
-                    </div>
-                </div>
-            <div class="gallery-item view view-first view-hover">
-                    <img src="img/content/Slide3.png" height="285" width="415" alt="" class="gallery-item__pic gallery-item__pic3">
-                 <div class="mask">
-                      <a href=""></a>
-                    </div>
-                </div>
-            </div>
+        <div class="gallery">
+          <div class="gallery-item gallery-item__outside gallery-item__outside1">
+            <img src="img/icon/Gallery-icon.png" height="44" width="44" alt="#" class="gallery-title-img">
+            <p class="gallery-item__title">Фотогалерея
+            </p>
+            <a href="" class="gallery-item__subtitle">Посмотреть всё</a>
+            <div class="block"></div>
+          </div>
+        <div class="gallery-item gallery-item__middle gallery-item__middle1">
+          <div class="block block-hover"></div>
+          </div>
+          <div class="gallery-item gallery-item__middle gallery-item__middle2">
+          <div class="block block-hover"></div>
+          </div>
+          <div class="gallery-item gallery-item__outside gallery-item__outside2">
+    
+          <div class="block block-hover2"></div>
         </div>
+      </div>
+    		
 
     		<!-- news and feedback -->
             <div class="feedback-news">
@@ -218,7 +246,8 @@
     		  </div>
     		</div>
     		<div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15951.210588911172!2d30.701125436283082!3d60.01671061490567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4697d30df5927ca1%3A0xee88e82c7a6ad151!2z0J_Rg9GI0LrQuNC90YHQutC40Lkg0L_QtdGALiwg0JLRgdC10LLQvtC70L7QttGB0LosINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4sIDE4ODY0Mg!5e0!3m2!1sru!2sru!4v1453929216892" width="100%" height="563" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15951.210588911172!2d30.701125436283082!3d60.01671061490567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4697d30df5927ca1%3A0xee88e82c7a6ad151!2z0J_Rg9GI0LrQuNC90YHQutC40Lkg0L_QtdGALiwg0JLRgdC10LLQvtC70L7QttGB0LosINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4sIDE4ODY0Mg!5e0!3m2!1sru!2sru!4v1453929216892" width="100%" height="563" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
     		</div>
     		<!-- footer -->
 <footer class="footer-contacts">
@@ -232,39 +261,12 @@
             </div>
           <div class="footer-contacts-item3">
             <p class="footer-number-text1">Контакты:<br>
-            <span class="footer-number-text2">тел.:+7(904)-38-88<br>e-mail:info@millcreek.</p>
+            <span class="footer-number-text2">тел.:+7(904)-38-88<br>e-mail:info@millcreek.</span></p>
           </div>
       </div>
     </div>
 </footer>
     	</main>
-
-        <!-- like-countdown from VK -->
-<<<<<<< HEAD
-<!-- switch the lightbox -->
-<script src="path/to/lightbox.js"></script>
-
-        <!-- page-skroll -->
-
-=======
-<!--<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
-
-<script type="text/javascript">
-                VK.init({apiId: API_ID, onlyWidgets: true});
-                </script>
-                <div id="vk_like"></div>
-<script type="text/javascript">
-                VK.Widgets.Like("vk_like", {type: "button"});
-                </script>-->
-
-        <!-- page-skroll -->
-<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
->>>>>>> efa3f43fca69fe12c3d0530e9694b8f16f0457c0
- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/script.js"></script>   	
-
-    	  -->
-    	  
-	</body>
+      
+ </body>
 </html>
