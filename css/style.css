@@ -37,94 +37,73 @@ input{margin: 0; padding: 0;}
 
  /*header*/
 .top{
- background-color: #1d1007; 
-  height: 66px;
-  position: relative;
+	background-color: #1d1007;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	height: 66px;
 }
-.top-item{position: absolute;}
-.top-item__likecounter{
-  color: pink;
-  top: 20px;
-  left: 15%;
+.top-items{display: inline-block;
+content:'';
+  
 }
-.top-item__likecounter:before{
- content:"";
-  display: inline-block;
-padding: 10px;
-background-image: url(../img/content/vkontakte.png);
-  background-size: 22px 22px ;
+.top-item-vk-like{
+position: relative;
+background-image: url(../images/content/vkontakte.png);
+width: 12px;
+  height: 12px;
+  vertical-align:middle;
+  top: 22px;
+  left: 20px;
+  background-size:100%;
   background-repeat: no-repeat;
-  position: absolute;
-top: 0px;
-  right: 45px; 
 }
-.top-item__likecounter:after{
-   content:"";
-   padding: 10px;
-  display: inline-block;
-background-image: url(../img/content/heart.png);
-  background-size: 15px 15px ;
+.top-item-like-countdown{
+position: relative;
+background-image: url(../images/content/heart.png);
+width: 12px;
+  height: 12px;
+  vertical-align:middle;
+  top: 22px;
+  left: 40px;
+  background-size:100%;
   background-repeat: no-repeat;
-  position: absolute;
-top: 0px;
-  right: 35px;
 }
+.top-item-50likes{
+position: relative;
+left: 60px;	
+top: -10px;
+color: #f5abb6;	
+}
+
+.top-item-search-winow{
+position: relative;
+left: 320px;
+	top: -50px;
+}
+.search-window{
+	position: relative;
+	
+}
+.search-window-input{
+	position: relative;
+	float: left;
+  border: none;
+  padding: 0 280px 1px 15px;
+  background: #311d0f url(../images/icon/Search-glass.png) no-repeat;
+  vertical-align: middle;
+  color: #d8a95e;
+  
+}
+
+
 
 .top-item__number{
-  color: #fff;
-  
-  right: 10%;
-  top: 26px;
-}
-/*form*/
-.top-item__form{
-  top: 20px;
-  left: 43%;
-}
-#search {
-  /* устанавливаем ширину формы,
-  ** равную ширине поля ввода (183 + 37 + 15)	*/
-  width: 235px;
-  height: 29px;
-  border-radius: 10px;
-}
-/* делаем инпуты плавающими,
-** и отключаем бордюры */
-#search input {
-  float: left;
-  border: none;
-}
-/* стили для поля ввода */
-#search .input {
-  width: 183px;
-  height: 28px;
-
-  padding: 0 37px 1px 15px;
-  background: #977049 url(https://lh4.googleusercontent.com/-EllJnywnmlY/UAaKJYSYYMI/AAAAAAAABUU/IaRo-yUcRmc/s235/search.png) no-repeat;
-  color: #594232;
-  font: 15px/28px Tahoma, Arial, sans-serif;
-  outline: none;
-  border-radius: 15px;
-}
-@-moz-document url-prefix() {
-  #search .input {
-    height: 27px;
-    padding-bottom: 2px;
-  }
-}
-/* меняем оформление поля ввода при фокусе */
-#search .input:focus {
-  background-color: #d8a95e;
-  background-position: 0 -29px;
-  color: #594232;
-}
-/* оформляем кнопку отправки */
-#search .submit {
-  width: 49px;
-  height: 39px;
-  cursor: pointer;
-  margin-left: -37px;
-  background: url(dontexist.png);
+position: relative;
+color: #fff;
+font-size: 16px;
+font-weight: normal;
+left: 890px;
+top: -70px;
 }
 
 /*main*/
@@ -215,7 +194,7 @@ background-color: #594232;
 /*main-nav*/
 .main-nav{
 	background-image: url(../img/bgr/bgwood-1.png);
-	min-height: 648px;
+	min-height: 720px;
 	background-position: 50% 50%;
 	
 }
@@ -230,7 +209,7 @@ background-color: #594232;
 			width: 26%;
 			height: 180px;
 			float: left;
-			padding: 40px;
+			padding: 30px;
 		}
 
 		.horse-menu-item__layout{
@@ -333,43 +312,6 @@ background-color: #594232;
 
 		
 
-/*.row{ 
-  height: 222px;
-  margin: 0 auto;
-  
-} 
-.column-first{
-padding:;
-  box-sizing: border-box;
-  
-  margin: ;
-width: 33.33%; 
-float: left;
-margin: 0 auto;
-min-height: 222px;
-position: relative;
-
-}*/
-/*nails*/
-
-/*titles nav*/
-
-/*a.column-titles{
-	text-transform: uppercase;
-	font-size: 22px;
-    color: #ffe5ae;
-    display: block;
-    height: 100%;
-    margin-top: 20px;
-    position: relative;
-    font-family: MuseoSansCurl 300;
-    font-weight: normal;
-
- }*/
-
- /*pictures nav*/
- 
-
 /*price*/
 .price{
 	background-image: url(../img/bgr/tileable_wood_texture.png);
@@ -381,14 +323,20 @@ position: relative;
 	font-size: 24px;
 	font-weight: normal;
 }
+.price-title{
+	padding-right: 10px;
+	color: #27160a;
+	text-transform: uppercase;
+	font-family: MuseoSansCurl 300;
+	font-size: 24px;
+	font-weight: normal;
+}
 
 /*gallery*/
 .gallery{
 	background-image: url(../img/bgr/galleryBGsmall.png);
 	height: 283px;
 	border-bottom: 4px solid #27160a;
-	overflow: hidden;
-
 }
 /*gallery*/
 
@@ -513,7 +461,13 @@ top: 100px;
   font-size: 12px;
   font-weight: bold;
 }
-.gallery-title-img{
+.gallery-title-img:before{
+	content: "";
+padding: 5px;
+background-image: url(../img/icon/Gallery-icon.png);
+width: 40px;
+height: 40px;
+background-repeat: no-repeat;
 position: absolute;
 display: inline-block;
 top: 60px;

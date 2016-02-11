@@ -5,23 +5,29 @@
 		<title>Ruthenia</title>
 		<link rel='stylesheet' href='css/normalize.css' type='text/css'>
 		<link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <link href="js/lightbox2/dist/css/lightbox.css" rel="stylesheet">
   </head>
 	<body>
 	<!-- header -->
    <header class="top">
         <div class="container">
-            <div class="top-item top-item__likecounter"><span>likes</span></div>
-            <div class="top-item top-item__form">
-              <form action="" method="post" id="search">
-                <lable><i class="fa fa-search"></i></lable>
-                <input type="text" name="" value="поиск" onblur="if(this.value=='') this.value='поиск';" onfocus="if(this.value=='поиск') this.value='';" class="input" />
-                <input type="submit" name="" value="" class="submit" />
-              </form>
-            </div>  
-            <div class="top-item top-item__number"><span>+7 (904) 510 - 38 - 88</span>
-            </div>
-        </div> 
-      </header>     
+          <div class="top-items">
+                
+                   <div class="top-item-vk-like"></div>
+                   <div class="top-item-like-countdown"></div>
+                   <p class="top-item-50likes">50 likes</p>
+                    <div class="top-item-search-winow">
+                      <form action="" method="post" id="" class="search-window">
+                        <input type="text" name="" value="" onblur="if(this.value=='') this.value='';" onfocus="if(this.value=='') this.value='';" class="search-window-input">
+                      </form>
+
+                    </div>
+                
+                    <div class="top-item__number"><span>+7 (904) 510 - 38 - 88</span></div>
+            
+          </header>
+         
     	<main>
     		<div class="promo">
         <div class="promo_background-picture"></div>
@@ -35,12 +41,10 @@
     			  </div>
     			</div>
     		</div>
+      
     		<nav class="main-nav">
-    		  <div class="container">
-    		    <div class="row">
-    				<div class="column-first">
-
-<ul class="horse-menu">
+        <div class="container"> 
+  <ul class="horse-menu">
     <li class="horse-menu-item">
       <a class="horse-menu-item__link" href="#">
         <span class="horse-menu-item__icon horse-menu-item__icon_aboutus"></span>
@@ -132,33 +136,46 @@
       <span class="horse-menu-item__nail horse-menu-item__nail_bottom-right"></span>
     </li>
   </ul>
-      
-    		</nav>
-    		<!-- price section -->
+  </div>
+  </nav>
+ 
+   		
+<!-- price section -->
     		<div class="price">
-    		  <div class="container">
-    			<p class="price-title center"><ins>Цены</ins></p>
-    		  </div>
-    		</div>
+          <div class="container">
+          <p class="price-title center"><ins>Цены</ins></p>
+          </div>
+        </div>
+
     		<!-- photogallery -->
         <div class="gallery">
           <div class="gallery-item gallery-item__outside gallery-item__outside1">
-            <img src="img/icon/Gallery-icon.png" height="44" width="44" alt="#" class="gallery-title-img">
+            <span class="gallery-title-img"></span>
             <p class="gallery-item__title">Фотогалерея
             </p>
             <a href="" class="gallery-item__subtitle">Посмотреть всё</a>
             <div class="block"></div>
           </div>
+
+        <a href="images/Slide1.png" data-lightbox="roadtrip">
         <div class="gallery-item gallery-item__middle gallery-item__middle1">
           <div class="block block-hover"></div>
           </div>
-          <div class="gallery-item gallery-item__middle gallery-item__middle2">
-          <div class="block block-hover"></div>
-          </div>
+        </a>
+          
+
+        
+          <a href="images/Slide2.png" data-lightbox="roadtrip">
+            <div class="gallery-item gallery-item__middle gallery-item__middle2">
+              <div class="block block-hover"></div>
+            </div>
+          </a>
+
+         <a href="images/Slide3.png" data-lightbox="roadtrip">
           <div class="gallery-item gallery-item__outside gallery-item__outside2">
-    
-          <div class="block block-hover2"></div>
-        </div>
+            <div class="block block-hover2"></div>
+          </div>
+         </a>
       </div>
     		
 
@@ -267,6 +284,11 @@
     </div>
 </footer>
     	</main>
+
+      <script src="js/jquery-2.2.0.js"></script>
+
+      <script src="js/lightbox2/dist/js/lightbox.js"></script>
+      
       
  </body>
 </html>
